@@ -1,0 +1,11 @@
+.fm{
+    width:200px;
+    height: 100px;
+}
+
+
+.fm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
