@@ -12,4 +12,4 @@ document.querySelector('#id ou class colocando ponto para selecionar um item do 
 
 document.querySelectorAll('#id ou class colocando ponto para selecionar diversos itens no html).
 
-obs. innerText é utilizado para jogar um texto para o usuário já o innerHTML é possível jogar <div> <span> que vai servir para alterar a estrutura para o usuário.
+Obs. innerText é utilizado para jogar um texto para o usuário já o innerHTML é possível jogar <div> <span> que vai servir para alterar a estrutura para o usuário.
