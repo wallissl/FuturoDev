@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="assets/styles/S2EX2.css">
 </head>
 <body>
-    <h1>Calculadora do Yan</h1>
-    
-    <fieldset class="fm">
-        <label for="n1"></label>
-        <input type="number" id="n1" name="n1">
 
-        <select name="operacao" id="operacao">
-            <option value="">Escolha uma operação</option>
-                <option value="soma">+</option>
-                <option value="sub">-</option>
-                <option value="mult">*</option>
-                <option value="div">/</option>
-        </select>
+    <section>
+        <h1>Calculadora do Yan</h1>
+        
+        <fieldset class="fm">
+            <label for="n1"></label>
+            <input type="number" id="n1" name="n1">
 
-        <label for="n2"></label>
-        <input type="number" id="n2" name="n2">
+            <select name="operacao" id="operacao">
+                <option value="">Escolha uma operação</option>
+                    <option value="soma">+</option>
+                    <option value="sub">-</option>
+                    <option value="mult">*</option>
+                    <option value="div">/</option>
+            </select>
 
-        <span id="resposta"></span>
-    
-        <button id="teste" onclick="validar()">Calcular</button>
-    </fieldset>
+            <label for="n2"></label>
+            <input type="number" id="n2" name="n2">
 
+            <span id="resposta"></span>
+        
+            <button id="teste" onclick="validar()">Calcular</button>
+        </fieldset>
+    </section>
 </body>
 
     <script src="assets/js/S2EX2.js"></script>

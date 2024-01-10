@@ -1,11 +1,22 @@
-.fm{
-    width:200px;
-    height: 100px;
-}
-
-
-.fm{
+section{
+    width: 90%;
+    height: 500px;
+    background: gray;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;    
 }
+
+.fm{
+    width: 180px;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fm input{
+    margin: 10px 0 10px 0;
+}
+
+
