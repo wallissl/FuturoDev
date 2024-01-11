@@ -1,3 +1,73 @@
 body{
-    background: #98dfdb;
+    margin:0 auto;
+}
+
+header{
+    height:70px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hea1{
+    height:50px;
+    background: #000;
+}
+
+.hea2{
+    height:50px;
+    width:480px;
+    background: #000000;
+    margin: 0 10px 0 325px;
+}
+
+ul{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    font-family:Verdana;
+    color:#fff;
+}
+
+.hea3{
+    height:50px;
+    width:180px;
+    background: #000;
+}
+
+/* section home */
+
+section{
+    background: red;
+    height: 500px;;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHome{
+    background:#b4b4b4;
+    height:500px;
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blo1{
+    height:50%;
+    width:25%;
+    background-color: aqua;
+}
+
+.blo2{
+    height:50%;
+    width:25%;
+    background-color: rgb(94, 150, 72);
+}
+
+.blo3{
+    height:50%;
+    width:25%;
+    background-color: rgb(177, 114, 177);
 }
