@@ -56,18 +56,23 @@ section{
 
 .blo1{
     height:50%;
-    width:25%;
+    width:20%;
     background-color: aqua;
 }
 
 .blo2{
     height:50%;
-    width:25%;
-    background-color: rgb(94, 150, 72);
+    width:47%;
+   
+}
+
+.blo2 img{
+    position: relative;
+    bottom:125px;
 }
 
 .blo3{
     height:50%;
-    width:25%;
+    width:20%;
     background-color: rgb(177, 114, 177);
 }
