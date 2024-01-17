@@ -12,13 +12,13 @@ header{
 
 .hea1{
     height:50px;
-    background: #000;
+    /* background: #000; */
 }
 
 .hea2{
     height:50px;
     width:480px;
-    background: #000000;
+    /* background: #000000; */
     margin: 0 10px 0 325px;
 }
 
@@ -27,13 +27,24 @@ ul{
     justify-content:space-around;
     list-style-type: none;
     font-family:Verdana;
-    color:#fff;
+    color:#d1d1d1;
+    font-size: 14px;
+    padding:2px 75px
+    
 }
 
 .hea3{
     height:50px;
     width:180px;
-    background: #000;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+.hea3 img{
+    width:33px;
+    margin:0 15px
 }
 
 /* section home */
@@ -124,15 +135,51 @@ h2{
 
 .art{   
     width:30%;
-    background:#000;
-    height:250px;
+    background:#c7c7c7;
+    height:275px;
     margin-left: 5px;
+    text-align: center;
 }
 
+figure{
+    width:75%;
+    height:150px;
+}
+
+figure.fig1{
+    background-image: url("../img/behance.png");
+    background-size: cover;
+}
+
+figure.fig2{
+    background-image: url("../img/github.png");
+    background-size: cover;
+}
+
+figure.fig3{
+    background-image: url("../img/linkedin2.png");
+    background-size: cover;
+}
+
+article span{
+    color:#9b9595;
+    display: inline-block;
+    width: 55%;
+}
+
+h3 a{
+    color:#686363;
+    text-decoration: none;
+}
+
+/*  .linke{
+    color:aqua;
+}
+ */
 /* Rodapé */
 
 footer{
-    background: #7e7d7d;
+    background: #000000;
     height:51px;
     display: flex;
 }
@@ -143,18 +190,23 @@ footer{
     width:50%;
     display: flex;
     align-items:center;
+    color:#d1d1d1;
 }
 
 .iFooter{
     width:58%;
-    background-color:red;
+    background-color:rgb(0, 0, 0);
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
+    
 }
 
 .iFooter ul li{
   padding: 0 20px;
+  color:#d1d1d1;
+  font-size: 13px;
  
 }
 

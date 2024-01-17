@@ -12,7 +12,7 @@
 <body>
 
     
-    <header>
+    <header id="header">
 
         <div class="hea1"> <img src="assets/img/logo.png" style= "width:110px; position:relative; bottom: 10px"></div>
         <div class="hea2">
@@ -70,9 +70,17 @@
         </div>
 
         <div class="artClass">
-            <article class="art"></article>
-            <article class="art"></article>
-            <article class="art"></article>
+            <article class="art" >
+                <figure class="fig1" id="artDes"></figure>
+                <h3><a href="https://www.behance.net/Wallissl" target="_blank">Designer Digital</a></h3><span>Portfólio Behance Trabalhos gráficos e digitais</span>
+            </article>
+            <article class="art" >
+                <figure class="fig2" id="artDev"></figure>
+                <h3><a href="https://github.com/wallissl" target="_blank">Front end developer</a></h3><span>Repositório web gitHub Let's code!</span>
+            </article>
+            <article class="art" >
+                <figure class="fig3" id="artCur" onclick="clickCur()"></figure>
+                <h3><a href="https://www.linkedin.com/in/wallis/" target="_blank" onmousemove="linkeAcess()" class="linke">Currículo</a></h3><span>Currículo web Linkedin Formação e experiências</span></article>
         </div>
        
     </section>
