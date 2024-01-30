@@ -29,9 +29,24 @@ ul{
     font-family:Verdana;
     color:#d1d1d1;
     font-size: 14px;
-    padding:2px 75px
+    padding:2px 75px;
     
 }
+
+.hea2 ul li a{
+    text-decoration: none;
+    
+}
+
+.hea2 ul li a:visited{
+    color: #d1d1d1;
+}
+
+.hea2 ul li a:hover{
+    color:#ffffff;
+}
+
+
 
 .hea3{
     height:50px;
@@ -52,7 +67,7 @@ ul{
 section{
     height: 500px;;
     display: flex;
-    justify-content: center;
+    justify-content: center ;
 }
 
 .sectionHome{
@@ -131,6 +146,7 @@ h2{
     font-family:Verdana;
     color:#9b9595;
     
+    
 }
 
 .art{   
@@ -147,7 +163,7 @@ figure{
 }
 
 figure.fig1{
-    background-image: url("../img/behance.png");
+    background-image: url("../img/behance2.png");
     background-size: cover;
 }
 
@@ -172,16 +188,123 @@ h3 a{
     text-decoration: none;
 }
 
-/*  .linke{
-    color:aqua;
+a:hover{
+    color:#a779ff; 
 }
- */
+
+
+/* Seção sobre */
+
+#sobre{
+    height:640px;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+}
+
+.pjSobre{
+    width: 80%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sobre h2{
+    color:#9b9595;
+    font-size:26px;
+    text-align: center;
+    justify-content: center;
+    margin:0;
+}
+
+.sob1{
+    width:21%;
+    text-align: center;
+    position: relative;
+    bottom:10px;
+    /* background-color: purple; */
+}
+
+.sob1 p{
+    font-size:16px;
+    color:#686363;
+}
+
+.sob2{
+    width:35%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rgb(101, 206, 171); */
+}
+
+figure.imgSob{
+    height:400px;
+    background-image: url("../img/sobre.png");
+    background-size: cover;
+}
+
+
+/* Seção sobre */
+
+#contato{
+    height:580px;
+    display: flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    background-color: #e7e7e7;
+    
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:15px;
+    color:#9b9595;
+}
+
+.bCont1{
+    display: flex;
+    order:1;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:#9b9595;
+}
+
+#contato ul{
+    color:#9b9595;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#contato ul li img{
+    width:30px;
+    position:relative;
+    bottom:7px;
+}
+
+#contato ul li{
+    padding:15px;
+    width:150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
 /* Rodapé */
 
 footer{
     background: #000000;
     height:51px;
     display: flex;
+    margin-top:20px;
 }
 
 .dRes{

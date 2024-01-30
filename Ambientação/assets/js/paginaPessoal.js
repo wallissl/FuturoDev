@@ -27,10 +27,16 @@ function mouHea(){
 
 }
 
-header.addEventListener('mouseout', () =>{
+header.addEventListener('mouseout', ()=>{
     header.style.backgroundColor="#000";
+   
 });
  
 function linkeAcess(){
-    linke[0].style.color="#000";
+    linke[0].style.color="#a779ff";
 }
+
+linke[0].addEventListener('mouseout', ()=>{
+    linke[0].style.color="#686363";
+});
+
