@@ -1,5 +1,6 @@
 console.log('Hello World');
 
+// Pode votar se tiver mais de 18 anos.
 /* let pessoa = 17;
 
 if(pessoa >= 18){
@@ -9,6 +10,7 @@ if(pessoa >= 18){
 } */
 
 
+// Pode acessar se estiver logado
 /* let logado = true;
 
 if(logado == true){
@@ -18,8 +20,7 @@ if(logado == true){
 } */
 
 
-
-
+// Pode logar se credenciais estiverem corretas
 /* let usuario = "wallis@senai.org.br";
 let usuarioCorreto ="wallis@senai.org.br"
 let senha = 123;
@@ -29,10 +30,10 @@ if(usuario == usuarioCorreto && senha == senhaCorreta){
     console.log("Bem vindo");
 }else{
     console.log("Usuário ou senha incorreto")
-}//// */
+} */
 
-////////////
 
+// Desconto de 10% em cima de compra que está quase vencendo
 /* let produto = true;
 let valor = 200;
 
@@ -46,18 +47,12 @@ let valorComDesconto = valor - desconto;
 }
  */
 
-/* let proshampoovalor = 20;
-let desc = 0.10
-let pertodevencer = true;
-if (pertodevencer==true){
-    desc = proshampoovalor*desc
-    prom = proshampoovalor - desc 
-    console.log(prom)
-}
+
+// Error Banana
+/* console.log(('b' + 'a' + + 'a' + 'a'))  */
 
 
-console.log(('b' + 'a' + + 'a' + 'a')) // Erro */
-
+// Dias da semana com Switch
 /* let a = 1
 let b = 2
 let c = 3
@@ -95,7 +90,7 @@ switch(f){
 }
  */
 
-
+// Outra forma de fazer com Date
 /* let data = new Date().getDay();
 
 switch (data) {
@@ -120,10 +115,10 @@ switch (data) {
   case 6:
     console.log("sábado");
 }
+console.log(data) */
 
-console.log('oi' + data) */
 
-
+// Switch case estação do ano
 /* let mesAno = 6;
 
 switch(mesAno){
@@ -152,56 +147,74 @@ switch(mesAno){
 }
  */
 
-/* let inicioVerao = new Date( 22, 11)
-let finalVerao = new Date( 20, 2)
-let data = Date( 23, 10)
-if(data > inicioVerao && data < finalVerao ){
-    console.log("É verão")
-}else{
-    console.log("Não é verão")
-}
- */
 
-let mes = 11;
-let ano = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+// Descobrir qual é o mês correspondente ao número informado com switch
+/* let mesAno= 1;
 
- for(var i=0; i<12; i++){
-    if(mes == (i+1)){
-        console.log(ano[i])
-    }
-} 
-
- switch(mes){    
-    case (mes == i):
-        console.log(ano[i]);
-    break;  
-}   
-
-/* 
-
-switch(mes){
+switch(mesAno){
     case 1:
-        
         console.log("Janeiro");
     break;
+    case 2:
+        console.log("Fevereiro");
+    break;
+    case 3:
+        console.log("Março");
+    break;
     case 4:
-        case 5:
-            case 6:
-        console.log("Outono");
+        console.log("Abril");
+    break;
+    case 5:
+        console.log("Maio");
+    case 6:
+        console.log("Junho");
     break;
     case 7:
-        case 8:
-            case 9:
-        console.log("Inverno");
+        console.log("Julho");
     break;
+    case 8:
+        console.log("Agosto");
+    case 9:
+        console.log("Setembro");
     case 10:
-        case 11:
-            case 12:
-        console.log("Primavera");
+        console.log("outubro");
+    break;
+    case 11:
+        console.log("Novembro");
+    break;
+    case 12:
+        console.log("Dezembro");
     break;
     default:
-        console.log("O número não corresponde a um mês do ano")
+        console.log("Informe um número correspondente a um mês do ano")
 } */
 
 
+// Forma de realizar utilizando um laço de repetição + switch + if
+/* let mes = 9;
+let ano = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
 
+if(mes > 0 || mes < 15){
+    for(var i=0; i<13; i++){
+
+        switch(i){
+            case (mes):
+                console.log(ano[i-1]);
+            break;
+        }
+    }
+}
+if(mes <1 || mes > 12){
+    console.log('Informe um número correspondente a um mês do ano!')
+} */
+
+
+// Forma de realizar apenas com laço for
+/* let mes = 1;
+let ano = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+
+for(var i=0; i<13; i++){
+    if(mes == (i+1)){
+        console.log(ano[i])   
+    }
+} */
