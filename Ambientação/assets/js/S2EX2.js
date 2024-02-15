@@ -1,9 +1,10 @@
-/* clicou.addEventListener('click', validar);
-
+ // Função criada no JavaScript */
  function validar(){
     console.log('Clicou');
-}  // Chamar a função pelo javaScript */
+} 
 
+// Forma de chamar a função e atribuir o metodo onclick
+/* clicou.addEventListener('click', validar);
 
 function validar(){
     let operacao = document.getElementById('operacao');
@@ -32,4 +33,4 @@ function validar(){
         default:
             alert("Informe um valor valido");
     }
-}
+} */

@@ -1,1 +1,1 @@
-Repositório referente aos exercícios e projetos desenvolvidos no curso Floripa Mais Tec.
+Repositório referente aos exercícios e projetos desenvolvidos no curso Analisata de desenvolvimento Web - Floripa Mais Tec 2024.

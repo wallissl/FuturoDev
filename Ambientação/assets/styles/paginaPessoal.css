@@ -46,8 +46,6 @@ ul{
     color:#ffffff;
 }
 
-
-
 .hea3{
     height:50px;
     width:180px;
@@ -57,13 +55,14 @@ ul{
     align-items: center;
     padding: 0 5px;
 }
+
 .hea3 img{
     width:33px;
     margin:0 15px
 }
 
-/* section home */
 
+/* section home */
 section{
     height: 500px;;
     display: flex;
@@ -91,31 +90,27 @@ h1 {
 .blo1{
     height:50%;
     width:20%;
-    /* background-color: aqua; */
     text-align: center;
 }
 
 .blo2{
     height:50%;
-    width:47%;
-     
+    width:47%;     
 }
 
 .blo2 img{
     position: relative;
     bottom:125px;
-
 }
 
 .blo3{
     height:50%;
     width:20%;
-    /* background-color: rgb(177, 114, 177); */
     text-align: center;  
 }
 
-/* Seção de artigos */
 
+/* Seção de artigos */
 .secArticlo{
     background:#e7e7e7;
     height:400px;
@@ -144,9 +139,7 @@ h2{
 .pj{
     font-size: 20px;
     font-family:Verdana;
-    color:#9b9595;
-    
-    
+    color:#9b9595;    
 }
 
 .art{   
@@ -194,7 +187,6 @@ a:hover{
 
 
 /* Seção sobre */
-
 #sobre{
     height:640px;
     display: flex;
@@ -207,8 +199,7 @@ a:hover{
     height: 65px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 #sobre h2{
@@ -224,7 +215,6 @@ a:hover{
     text-align: center;
     position: relative;
     bottom:10px;
-    /* background-color: purple; */
 }
 
 .sob1 p{
@@ -236,7 +226,6 @@ a:hover{
     width:35%;
     display: flex;
     justify-content: flex-end;
-    /* background-color: rgb(101, 206, 171); */
 }
 
 figure.imgSob{
@@ -247,14 +236,12 @@ figure.imgSob{
 
 
 /* Seção sobre */
-
 #contato{
     height:580px;
     display: flex;
     flex-wrap: wrap;   
     align-items: center;
     background-color: #e7e7e7;
-    
 }
 
 .cont{
@@ -278,7 +265,6 @@ figure.imgSob{
     color:#9b9595;
     display: flex;
     flex-direction: column;
-    
 }
 
 #contato ul li img{
@@ -297,9 +283,7 @@ figure.imgSob{
 
 
 
-
 /* Rodapé */
-
 footer{
     background: #000000;
     height:51px;
@@ -309,7 +293,6 @@ footer{
 
 .dRes{
     margin-left: 25%;
-    /* background-color: red; */
     width:50%;
     display: flex;
     align-items:center;
@@ -322,16 +305,10 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
-    
 }
 
 .iFooter ul li{
   padding: 0 20px;
   color:#d1d1d1;
   font-size: 13px;
- 
 }
-
-
-

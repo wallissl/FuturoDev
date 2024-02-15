@@ -18,4 +18,4 @@ function maior(n1,n2){
     }
 }
 
-maior(n1,n2)
+maior(n1,n2);

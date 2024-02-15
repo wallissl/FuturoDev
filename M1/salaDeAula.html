@@ -8,10 +8,10 @@
 </head>
 <body>
 
-    <!-- Aula 01 - Formulários e inputs -->
+    <!-- Formulários e inputs -->
 
-    <!--<form id="meu forms">-->
-        <div id="box_login">
+    <div id="box_login">
+
             <h1> Login </h1>
 
             <input type="radio" id="html" name="fav_language" value="HTML"> 
@@ -35,38 +35,35 @@
             <input type="email" placeholder="Digite seu email" class="custom_input">
             <input type="text" placeholder="Endereço" class="custom_input"> 
 
-            <button onclick="analisarInputs()">Analisar inputs</button> -->
-            
+            <button onclick="analisarInputs()">Analisar inputs</button> -->  
+    </div>
+
+    <!-- Capturar informações de um formulário -->
+    <form id="meuForm">
+        <input name="nome" type="text" placeholder="nome" class="custom_input">
+        <input name="email" type="email" placeholder="Digite seu email" class="custom_input">
+        <input name="endereco" type="text" placeholder="Endereço" class="custom_input"> 
+
+        <button onclick="analisarInputs(event)">Analisar inputs</button>
+
+        <div>
+            <p class="pergunta-text">Quais suas linguagens favoritas?</p>
+
+            <input type="checkbox" id="js" name="linguagens_fav" value="javascript" onchange="novaSelecao(event)"> <!-- O onchange com função "novaSelecao para conseguir mapear a ordem que o usuário selecionou, caso seja necessário"  -->
+            <label for="js">Javascript</label>
+
+            <input type="checkbox" id="c" name="linguagens_fav" value="c#" onchange="novaSelecao(event)" >
+            <label for="c">C#</label>
+
+            <input type="checkbox" id="lua" name="linguagens_fav" value="lua" onchange="novaSelecao(event)" >
+            <label for="lua">Lua</label>
         </div>
 
-        <!-- Capturar informações de um formulário -->
-        <form id="meuForm">
-            <input name="nome" type="text" placeholder="nome" class="custom_input">
-            <input name="email" type="email" placeholder="Digite seu email" class="custom_input">
-            <input name="endereco" type="text" placeholder="Endereço" class="custom_input"> 
+        <button onclick="analisarInputsCheck(event)">Analisar inputs checks</button>
 
-            <button onclick="analisarInputs(event)">Analisar inputs</button>
+    </form>
 
-            <div>
-                <p class="pergunta-text">Quais suas linguagens favoritas?</p>
-    
-                <input type="checkbox" id="js" name="linguagens_fav" value="javascript" onchange="novaSelecao(event)"> <!-- O onchange com função "novaSelecao para conseguir mapear a ordem que o usuário selecionou, caso seja necessário"  -->
-                <label for="js">Javascript</label>
-    
-                <input type="checkbox" id="c" name="linguagens_fav" value="c#" onchange="novaSelecao(event)" >
-                <label for="c">C#</label>
-    
-                <input type="checkbox" id="lua" name="linguagens_fav" value="lua" onchange="novaSelecao(event)" >
-                <label for="lua">Lua</label>
-            </div>
-
-            <button onclick="analisarInputsCheck(event)">Analisar inputs checks</button>
-
-        </form>
-    
-
-    
-
+    <script src="assets/js/salaDeAula.js"></script>
 </body>
-<script src="assets/js/salaDeAula.js"></script>
+
 </html>

@@ -147,9 +147,8 @@ switch(mesAno){
 }
  */
 
-
 // Descobrir qual é o mês correspondente ao número informado com switch
-/* let mesAno= 1;
+/* let mesAno = 1;
 
 switch(mesAno){
     case 1:
@@ -218,50 +217,36 @@ for(var i=0; i<ano.length; i++){
         console.log(ano[i])
         break;
     }
-    console.log('executando if');
 } */
 
-// Exercícios semana 04 - 12/02/2024
 
+// Exercícios semana 04 sala de aula - 12/02/2024 - Realizar um código para que seja perguntado ao usuário, via prompt, o nome ou código de um alimento. Após o código informado, identificar o preço deste alimento via switch e mostrá-lo ao usuário. Exemplo: morango como input e a saída mostrar R$ 5,99. A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’ é a flag para parar a execução. */
 
-
-/* Realizar um código para que seja perguntado ao usuário, via prompt, o nome ou código de um alimento. Após o código informado, identificar o preço deste alimento via switch e mostrá-lo ao usuário. Exemplo: morango como input e a saída mostrar R$ 5,99.
-
-A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’ é a flag para parar a execução. */
-
-var escolhaUsuario = 0;
+/* var escolhaUsuario = 0;
 let frutas = ['maça', 'banana', 'laranja'];
 
 do{
     escolhaUsuario = prompt('Digite o nome da fruta ou o código para consultar o valor ou digite 0 para sair');
     switch(escolhaUsuario){
         case '1':
-            alert('O valor da maça é: R$ 8,00 kg');
-        break;
-
-        case 'maça':
-            alert('O valor da maça é: R$ 8,00 kg');
+            case 'maça':
+                alert('O valor da maça é: R$ 8,00 kg');
         break;
 
         case '2':
-            alert('O valor da banana é: R$ 5,00 kg');
-        break;
-
-        case 'banana':
-            alert('O valor da banana é: R$ 5,00 kg');
+            case 'banana':
+                alert('O valor da banana é: R$ 5,00 kg');
         break;
 
         case '3':
-            alert('O valor da laranja é: R$ 3,00 kg');
+            case 'laranja':
+                alert('O valor da laranja é: R$ 3,00 kg');
         break;
 
-        case 'laranja':
-            alert('O valor da laranja é: R$ 3,00 kg');
-        break;
         default:
             if(escolhaUsuario != 0){
                 alert('Código ou fruta inválido');
             }
     }
 
-}while(escolhaUsuario != 0)
+}while(escolhaUsuario != 0) */
