@@ -1,4 +1,4 @@
-// Crie uma função que exiba uma mensagem simples no console.
+// Crie uma função que exiba uma mensagem simples no consoleaaa.
 
 function Hello(){
     console.log("Hello, World!");
