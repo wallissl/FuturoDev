@@ -62,3 +62,12 @@ function novaSelecao(event){
     console.log('linguagens Selecionadas');
     console.log(linguagens)
 }
+
+// Laço de repetição
+
+let numeroFor = 10;
+let numeroTeste = [1,2,3,4,5]
+
+for (let i=0; i<numeroTeste.length; i++){
+    console.log(i)
+}
