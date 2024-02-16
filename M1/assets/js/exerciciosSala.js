@@ -147,8 +147,9 @@ switch(mesAno){
 }
  */
 
+
 // Descobrir qual é o mês correspondente ao número informado com switch
-/* let mesAno = 1;
+/* let mesAno= 1;
 
 switch(mesAno){
     case 1:
@@ -219,21 +220,24 @@ for(var i=0; i<ano.length; i++){
     }
 } */
 
+// Exercícios semana 04 - 12/02/2024
 
-// Exercícios semana 04 sala de aula - 12/02/2024 - Realizar um código para que seja perguntado ao usuário, via prompt, o nome ou código de um alimento. Após o código informado, identificar o preço deste alimento via switch e mostrá-lo ao usuário. Exemplo: morango como input e a saída mostrar R$ 5,99. A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’ é a flag para parar a execução. */
+/* Realizar um código para que seja perguntado ao usuário, via prompt, o nome ou código de um alimento. Após o código informado, identificar o preço deste alimento via switch e mostrá-lo ao usuário. Exemplo: morango como input e a saída mostrar R$ 5,99.
+
+A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’ é a flag para parar a execução. */
 
 /* var escolhaUsuario = 0;
-let frutas = ['maça', 'banana', 'laranja'];
 
-do{
+ do{ 
     escolhaUsuario = prompt('Digite o nome da fruta ou o código para consultar o valor ou digite 0 para sair');
-    switch(escolhaUsuario){
+    //toLocaleLowerCase utilizado para converter para letra minuscula ou UpperCase para maiúscula.
+    switch(escolhaUsuario.toLocaleLowerCase()){
         case '1':
-            case 'maça':
+            case 'maça': 
                 alert('O valor da maça é: R$ 8,00 kg');
         break;
 
-        case '2':
+        case '2':            
             case 'banana':
                 alert('O valor da banana é: R$ 5,00 kg');
         break;
@@ -242,11 +246,81 @@ do{
             case 'laranja':
                 alert('O valor da laranja é: R$ 3,00 kg');
         break;
-
         default:
-            if(escolhaUsuario != 0){
-                alert('Código ou fruta inválido');
+
+        if(escolhaUsuario != 0){
+            alert('Código ou fruta inválido');
+        }
+    }
+
+}while(escolhaUsuario != 0); */
+
+
+
+// Utilizar as informações do Switch dentro do HTML
+
+// Capturar o valor digitado no input-produto
+const inputProduto = document.getElementById('input-produto');
+//inputProduto.value;
+
+// Alterar o texto do resposta-preco dentro do HTML
+const respostaH4 = document.getElementById('resposta-preco');
+//respostaH4.innerText='teste';
+
+// Criação da função consultarPreco
+/* function consultarPreco(){
+    const produto = inputProduto.value.toLocaleLowerCase(); // Pegar o valor digitado no input pelo usuário
+
+    switch(produto){
+        case '1':
+            case 'maça': 
+                respostaH4.innerText = ('O valor da maça é: R$ 8,00 kg'); // Jogar o valor correspondente do case no HTML
+        break;
+
+        case '2':            
+            case 'banana':
+                respostaH4.innerText = ('O valor da banana é: R$ 5,00 kg');
+        break;
+
+        case '3':
+            case 'laranja':
+                respostaH4.innerText = ('O valor da laranja é: R$ 3,00 kg');
+        break;
+        default:
+
+        if(produto != 0){
+            respostaH4.innerText = ('Código ou fruta inválido');
+        }
+    }
+} */ // Forma de realizar utilizando a função consultar preço com o Switch dentro dela
+
+// Forma de realizar a função separando o Switch dentro de uma outra função para deixar o código mais limpo.
+
+function consultarPreco(){
+    const produto = inputProduto.value.toLocaleLowerCase();
+    //const resposta = precos(produto); // caso queira armazenar o precos(produto) em outra variável e depois chamar a variável no respostaH4.
+    respostaH4.innerText = precos(produto);
+}
+
+function precos(produto){
+    switch(produto){
+        case '1':
+            case 'maça': 
+                return "O valor da banana é: R$ 8,00 kg";
+        
+        case '2':            
+            case 'banana':
+                return ('O valor da banana é: R$ 5,00 kg');
+        
+        case '3':
+            case 'laranja':
+                return ('O valor da laranja é: R$ 3,00 kg');
+            
+        default:
+            if(produto != 0){
+                return ('Código ou fruta inválido');
             }
     }
 
-}while(escolhaUsuario != 0) */
+}
+
