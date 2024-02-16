@@ -1,5 +1,7 @@
 // S04_Ex06: Crie 3 objetos com propriedades representando informações pessoais (nome, idade, nacionalidade e profissão) e exiba essas informações com um console.log para cada objeto.
 
+
+
 // Primeira forma de realizar o print dos objetos no console.log
 let rh = {
     nome: "João",
