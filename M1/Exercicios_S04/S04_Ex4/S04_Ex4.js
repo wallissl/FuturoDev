@@ -2,7 +2,7 @@
 
 function somarNumeros(n1,n2){
     soma = (n1+n2)
-    console.log(soma);
+    console.log(`Olá, os números armazenados para a soma são: ${n1} e ${n2} - O valor da soma é:${soma}`);
 }
 
 somarNumeros(20,30);
