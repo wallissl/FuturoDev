@@ -69,3 +69,9 @@ let numeroTeste = [1,2,3,4,5]
 for (let i=0; i<numeroTeste.length; i++){
     console.log(i)
 }
+
+// split - é um método utilizado para separarmos uma string e inserir os carateres em um array. Exemplo:
+
+/* const horaInformada = "19:28"
+const hora = horaInformada.split(':')[1]
+console.log(hora) */

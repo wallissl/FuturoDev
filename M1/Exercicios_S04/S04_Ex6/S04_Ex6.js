@@ -19,12 +19,12 @@ let adm = {
     nacionalidade: "Brasileiro",
     profissao: "Secretária",
 
-    toString: (function(){
+    /* toString: (function(){
         return `${this.nome}, ${this.idade}, ${this.nacionalidade}, ${this.profissao}`;    
-    })
+    }) */
 }
 
-console.log(`Objeto 2 - ${adm}`);
+console.log(`Objeto 2 - ${JSON.stringify(adm)}`); // Conversão rápida do objeto para String para realizar a impressão.
 
 // Terceira forma de realizar o print dos objetos no console.log
 let mkt = {
