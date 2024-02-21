@@ -75,3 +75,19 @@ for (let i=0; i<numeroTeste.length; i++){
 /* const horaInformada = "19:28"
 const hora = horaInformada.split(':')[1]
 console.log(hora) */
+
+document.write("Olá, teste novamente.") // Escrever no arquivo HTML
+
+let n10 = 1000;
+console.log(n10.toFixed(2).replace('.',',')) // Utilizado para trocar a formatação dentro de valores númericos, exemplo . por ,.
+console.log(n10.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})) // Utilizado para converter valores para Real
+
+
+console.log('teste')
+
+let faltas = 3;
+notaFinal = 7;
+totalAulas = 20;
+
+let frequencia = ((faltas / totalAulas))
+console.log(frequencia)
