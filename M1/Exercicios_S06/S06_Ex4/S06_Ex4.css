@@ -1,0 +1,31 @@
+/* S06_Ex4: No arquivo CSS, adicione estilos para os elementos HTML adicionados anteriormente, como formatação de texto, cores, espaçamento, etc. */
+
+body{
+    background: url("wallpapers.jpg") no-repeat right top fixed;
+    background-size: cover;
+}
+
+span{
+    color: rgb(134, 134, 134);
+    margin-left: 1%;
+    margin-top: 2%;
+    }
+p{
+    margin-left: 3%;
+}
+
+section{
+    background-color: rgba(34, 168, 221, 0.253);
+    height: 800px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: #2f76e0;
+    width:50%;
+    height: 700px;
+}
+
