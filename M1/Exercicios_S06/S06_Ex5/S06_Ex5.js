@@ -1,0 +1,1 @@
+// S06_Ex5: Inicie um repositório Git para o seu projeto e faça o commit dos arquivos HTML, CSS e JavaScript.
