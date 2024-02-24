@@ -5,7 +5,7 @@ let nome = prompt("Olá, digite o seu nome:");
 
 function boasVindas(nomeUsuario){
 
-    alert(`Bem-vindo(a) ${nomeUsuario}`)
+    alert(`Bem-vindo(a): ${nomeUsuario}`)
 }
 
 boasVindas(nome);

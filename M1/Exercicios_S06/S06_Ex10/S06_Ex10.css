@@ -1,4 +1,4 @@
-/* S06_Ex8: No arquivo JavaScript, selecione elementos HTML (por exemplo, o elemento que contém o nome do usuário) e atualize seu conteúdo dinamicamente usando o JavaScript. */
+/* S06_Ex10: Adicione mais estilos, melhore a experiência do usuário com animações simples, adicione validações com JavaScript, etc. */
 
 body{
     background: url("../S06_Ex4/wallpapers.jpg") no-repeat right top fixed;
@@ -10,6 +10,7 @@ body{
     text-align: center;
     width: 100%;
     display: inline-block;
+
 }
 
 p{
@@ -62,6 +63,21 @@ figure img{
     text-align: center;
     color: rgb(134, 134, 134);
 }
+.descricao::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: ponteiro .7s infinite;
+} /* Utilizado para iserir algo após o elemento selecionado */
+
+@keyframes ponteiro {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+} /* Utilizado para definir propriedades para uma animação */
 
 a{
     text-decoration: none;
