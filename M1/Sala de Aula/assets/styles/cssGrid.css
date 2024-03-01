@@ -1,0 +1,54 @@
+/* .grid-container{
+
+    display:grid; */
+
+    /* grid-template-columns: 100px 50px 100px; */ /* Controlar o tamanho dos componentes filhos neste caso utilizamos a medida em px */
+
+    /* grid-template-columns: 1fr 2fr 1fr; */ /* A medida fr serve para você trabalhar com "frações" da tela, dividindo a tela inteira em partes de acordo com o número escolhido */
+     
+    /* grid-template-rows: repeat(3, 1fr); */  /* É possível utilizar o comando repeat para replicar um código mais de uma vez. */
+
+    /* gap:10px; */ /* Utilizado para aumentar o espaçamento entre os itens. */
+
+/* } */   /* Podemos utilizar o comando 'fr' que é utilizado para distribuir itens por toda a largura da nossa tela */
+
+/* .grid-item{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;  
+}  */
+
+
+/* Trabalhando com Template areas */
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+
+    grid-template-rows: 300px 400px 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header{
+    background: #2eaf4a;
+    grid-area: header;
+}
+
+.sidebar{
+    background:#1e37a7;
+    grid-area: sidebar;
+}
+
+.content{
+    background: #d15c4c;
+    grid-area: content;
+}
+
+.footer{
+    background: #d14cb0;
+    grid-area: footer;
+}
