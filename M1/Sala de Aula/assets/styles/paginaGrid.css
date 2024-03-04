@@ -4,14 +4,77 @@ html, body {
     height: 100%;
 }
  
-.grid-container{
+.grid-container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
 }
 
-.col1{
+.col1 {
     background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-position: right, left;
+}
+
+.col2, form {
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 {
+    padding-top: 90px;
+    align-items: center;
+}
+
+form {
+    width: 260px;
+}
+
+form * {
+    margin-bottom: 14px;
+}
+
+form span {
+    text-align: center;
+}
+
+form input, form button {
+    border-radius: 6px;
+    height: 32px;
+}
+form button {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.dont-account {
+    position: absolute;
+    bottom: 48px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
+
+.mt-6 {
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.subtitle {
+
+}
+
+.text-muted {
+    color: #8e8e8e;
 }

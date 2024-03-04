@@ -15,29 +15,57 @@
        
         <div class="col2">
 
-            <span>Prime Bank</span>
-            <span>Let's signing you in</span>
+            <span class="title"><b>PRIME BANK</b></span>
+            <span class="subtitle text-muted mt-6">Let's signing you in</span>
 
-            <form>
-                <input type="email" placeholder="Email address">
-                <input type="password" placeholder="Password">
+            <form class="mt-14" id="formLogin" onsubmit="login(event)">
+                <input type="email" placeholder="Email address" name="email" id="inputEmail">
+                <input type="password" placeholder="Password" id="inputSenha" name="password" required>
                 
                 <span>Forgot password?</span>
 
                 <button type="submit">Log in</button>
             </form>
-
-            <label>Or login with</label>
-            <div>
+            
+            <label class="mt-14 text-muted">Or login with</label>
+            <div class=" row mt-6">
                 <label>Google</label>
                 <label>Apple</label>
             </div>
 
-            <span>Don't have an account? <b>Sign up</b></span>
+            <span class="dont-account">Don't have an account? <b>Sign up</b></span>
 
         </div>
     </div>
     
+    <script>
+        function login(e){
+            e.preventDefault()
+            
+            const email = document.getElementById('inputEmail').value;
+            const password = document.getElementById('inputSenha').value;
+
+            const data = [
+                {
+                    id: 1,
+                    email: 'wallis.sl@outlook.com',
+                    senha: '1234567'
+                }
+            ] // Array de objetos
+
+            const result = data.find(item => item.email === email && item.senha === password) // Comando para buscar um dado dentro de um array 
+            
+            console.log('RESULT:')
+            console.log(result)
+
+            if(!result){
+                alert('Email e/ou senha incorretos.')
+            }else{
+                alert('Bem vindo!')
+            }
+        }
+
+    </script>
     
 </body>
 </html>
