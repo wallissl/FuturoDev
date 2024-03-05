@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05_Ex1</title>
+</head>
+<body>
+
+    <div style="margin-left: 1%; margin-top: 1%;">
+        
+        <p style="color: rgb(134, 134, 134);">
+            S05_Ex01: Desenvolva uma tela para simular consulta de preços e compra de produtos de mercado. <br> A tela deve conter os seguintes elementos:
+
+            Input para informar código ou nome do produto;
+            
+            Botão para consultar valor;
+            
+            Botão para comprar produto consultado; <hr>
+        </p>
+        
+    </div>
+
+    <h1 style="margin-left:25px"> Bem vindo ao mercado do Yan </h1>
+    <h3>Produtos disponíveis:</h3>
+    <ul>
+        <li>201 - Banana</li>
+        <li>202 - Maça</li>
+        <li>203 - Laranja</li>
+    </ul>
+
+    <input type="text" name="codName" id="codName" placeholder="Informe o nome ou código do produto" style="width: 230px; margin-left: 25px;"> <button id="consultar" onclick="valorProduto()">Consultar valor</button> <br> <br>
+
+    <span id="resposta" style="margin-left: 25px;">Valor do produto</span> <button id="comprar">Comprar</button>
+
+
+
+
+    <script src="S05_Ex1.js"></script>
+</body>
+</html>
