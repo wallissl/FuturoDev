@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S05_Ex1</title>
+</head>
+<body>
+
+    <div style="margin-left: 1%; margin-top: 1%;">
+
+        <p style="color: rgb(134, 134, 134);">
+            S05_Ex02: Adicione um evento de clique para consultar o valor do produto digitado pelo consumidor. A resposta deve ser trazida de forma dinâmica a partir de uma função, seja por alert ou alteração do innerText de uma tag de texto presente no html. Exemplo:
+
+            alert('O valor do produto é: ')
+            
+            ou
+            
+            document.getElementById('preco-produto').innerText = 'O valor do produto é…' <hr>
+        </p>
+
+    </div>
+
+    <h1 style="margin-left:25px"> Bem vindo ao mercado do Yan </h1>
+    <h3 style="margin-left: 25px;">Digite o nome do produto e consulte o valor:</h3>
+    <h4 style="margin-left: 25px;">Produtos disponíveis</h4>
+    <ul ul style="list-style-type: none;">
+        
+        <li>Banana</li>
+        <li>Maça</li>
+        <li>Laranja</li>
+    </ul>
+
+    <input type="text" name="codName" id="codName" placeholder="Digite o nome do produto" style="width: 150px; margin-left: 25px;"> <button id="consultar" onclick="valorProduto()">Consultar valor</button>
+
+    <script src="S05_Ex2.js"></script>
+</body>
+</html>
