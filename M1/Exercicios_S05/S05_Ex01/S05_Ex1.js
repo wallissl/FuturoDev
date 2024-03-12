@@ -5,7 +5,7 @@ let codName = document.getElementById('codName');
 
 function valorProduto(){
 
-    resposta.innerHTML = (codName.value)
+    // resposta.innerHTML = (codName.value)
 
     switch(codName.value.toLowerCase()){ // toLowerCase é utilizado para converter os valores de uma string para minúsculo.
         case '201':
