@@ -3,6 +3,7 @@
 let resposta = document.getElementById('resposta');
 let codName = document.getElementById('codName');
 let carrinho =[]
+let totalCarrino = Number();
 
 
 function frutaEscolhida(codName){ // A função recebe o valor que o usuário digitar no input
@@ -27,13 +28,43 @@ valorProduto = () => {
 
 function comprar(){
     
-    let produto = {
+    let produto;
+  /*   let produto = {
+        nome: codName,
+        preco: 5.99
+    }; */
+
+    if(codName.value.toLowerCase() == 'banana'){
+        produto = {
         nome:codName.value.toLowerCase(),
         preco:5.99
-    };
+        }
+    }else if(codName.value.toLowerCase() == 'maça'){
+        produto = {
+            nome:codName.value.toLowerCase(),
+            preco: 6.99
+        }
+    }else if(codName.value.toLowerCase() == 'laranja'){
+        produto = {
+            nome:codName.value.toLowerCase(),
+            preco: 7.29
+        }
+    } 
 
-    carrinho.push([produto])
+    carrinho.push(produto)
     console.log(carrinho)
 }
 
+function totalCompra(){
+    if(carrinho != ''){
+        for(i=0; i<carrinho.length;i++){
+        //  console.log(carrinho[i].preco)
+         totalCarrino += carrinho[i].preco
+         
+        }
+    }else{
+        console.log('Carrinho Vazio')
+    }
+    console.log(totalCarrino)
+}
 
