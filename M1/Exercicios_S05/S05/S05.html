@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S05_Ex1</title>
+    <title>S05_Ex3</title>
 </head>
 <body>
 
     <div style="margin-left: 1%; margin-top: 1%;">
 
         <p style="color: rgb(134, 134, 134);">
-            S05_Ex01: Desenvolva uma tela para simular consulta de preços e compra de produtos de mercado. <br> A tela deve conter os seguintes elementos:
-
-            Input para informar código ou nome do produto;
-
-            Botão para consultar valor;
-
-            Botão para comprar produto consultado; <hr>
+            Exercícios semana 05 | As tarefas de todos os exercícios estão contidos neste arquivo html/js. <hr>
         </p>
 
     </div>
@@ -29,11 +23,21 @@
         <li>203 - Laranja</li>
     </ul>
 
-    <input type="text" name="codName" id="codName" placeholder="Informe o nome ou código do produto" style="width: 230px; margin-left: 25px;"> <button id="consultar" onclick="valorProduto()">Consultar valor</button> <br> <br>
+    <!-- Input para informar código ou nome do produto -->
+    <input type="text" name="codName" id="codName" placeholder="Informe o nome ou código do produto" style="width: 230px; margin-left: 25px;">
+    
+    <!-- Botão para consultar o valor -->
+    <button id="consultar" onclick="valorProduto()">Consultar valor</button> <br> <br>
 
     <span id="resposta" style="margin-left: 25px;">Valor do produto</span><br><br>
+
+    <!-- Botão para compra de produto consultado -->
      <button id="comprar" onclick="comprar()" style="margin-left: 25px;">Comprar</button>
 
-    <script src="S05_Ex1.js"></script>
+     <button id="totalCompra" onclick="totalCompra()">Valor total no carrinho</button>
+
+     <p id="valorCarrinho" style="margin-left: 25px;"></p>
+
+    <script src="S05.js"></script>
 </body>
 </html>

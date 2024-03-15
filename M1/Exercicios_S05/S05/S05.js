@@ -6,7 +6,7 @@ let carrinho =[]
 let totalCarrino = Number();
 let valorCarinho = document.getElementById('valorCarrinho');
 let controle = 0
-
+let totalItens = 0
 
 function frutaEscolhida(codName){ // A função recebe o valor que o usuário digitar no input
 
@@ -41,16 +41,19 @@ function comprar(){
         nome:codName.value.toLowerCase(),
         preco:5.99
         }
+        totalItens ++
     }else if(codName.value.toLowerCase() == 'maça'){
         produto = {
             nome:codName.value.toLowerCase(),
             preco: 6.99
         }
+        totalItens ++
     }else if(codName.value.toLowerCase() == 'laranja'){
         produto = {
             nome:codName.value.toLowerCase(),
             preco: 7.29
         }
+        totalItens ++
     }else{
         produto = 0
         controle ++
@@ -73,7 +76,13 @@ function comprar(){
 
 function totalCompra(){
     
+    if(totalCarrino !=0){
+    valorCarinho.innerHTML = `Total de itens no carrinho: ${totalItens}<br>Valor Total: R$${totalCarrino.toFixed(2)}`;
     
-    valorCarinho.innerHTML = totalCarrino;
+    }else{
+        valorCarinho.innerHTML = "Carrinho Vazio"
+    }
 }
+
+
 
