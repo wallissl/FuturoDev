@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+}
+
+section{
+    
+    border-radius: 30px;
+    width: 50%;
+    height: 700px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    height: 650px;
+    width:  50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco1{
+    height: 200px;
+    background-color: rgb(251, 255, 202);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco2{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+figure{
+    background-color: rgb(132, 209, 162);
+    height: 250px;
+    width: 200px;;
+}
+
+.box2{
+    height: 650px;
+    width: 50%;
+    /* background-color: rgb(50, 143, 62); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco3 {
+    height: 250px;
+    width: 50%;
+    background-color: rgb(226, 129, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco4 {
+    height: 250px;
+    width: 50%;
+    background-color: rgb(47, 178, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 5px 0;
+    border: none;
+    height: 20px;
+}
+span{
+    color: rgb(240, 240, 240);
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    left: 40px;;
+}
+hr{
+    width: 200px;
+}

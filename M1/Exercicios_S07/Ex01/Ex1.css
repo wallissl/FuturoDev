@@ -1,0 +1,33 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+header{
+    height: 550px;
+    border: 1px solid;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    height: 550px;
+    width: 550px;
+    border: 1px solid;
+    background-color: rgb(135, 194, 174);
+}
+
+.content{
+    height: 275px;
+    border: 1px solid;
+    background-color: rgb(233, 231, 144);
+}
+
+.head{
+    height: 275px;
+    border: 1px solid;
+    background-color: rgb(202, 73, 148);
+}
