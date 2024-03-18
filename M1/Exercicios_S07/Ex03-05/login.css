@@ -26,10 +26,21 @@ section{
     flex-direction: column;
 }
 
+a{
+    color:#ff6524;
+    text-decoration: none;
+}
+
+h1{
+    font-size:23px;
+    position: relative;
+    left:5px;
+}
+
 .bloco1{
     height: 200px;
     background-color: rgb(251, 255, 202);
-    width: 50%;
+    width: 44%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -99,7 +110,7 @@ span{
     margin-top: 3px;
     margin-bottom: 3px;
     position: relative;
-    left: 60px;;
+    left: 30px;;
 }
 hr{
     width: 200px;
