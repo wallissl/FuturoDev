@@ -54,3 +54,8 @@ Siga uma arquitetura próxima a imagem abaixo, não necessita copiar todos os el
 Link de referencia: https://dribbble.com/shots/22389071-Sign-Up
 
 ------------------------------------------------------
+
+[M1S07] Ex 5 - Adicione um redirecionamento de tela por meio da tag a entre login e cadastro
+
+Em ‘Register here’ presente na tela de login, adicione uma ação de redirecionamento por meio da 'tag a' diretamente para a página de cadastro.
+

@@ -86,13 +86,20 @@ input{
     border: none;
     height: 20px;
 }
+
+.textLink{
+    color:rgb(113, 113, 113);
+    position:relative;
+    left:10px;
+}
+
 span{
     color: rgb(240, 240, 240);
     font-size: 13px;
     margin-top: 3px;
     margin-bottom: 3px;
     position: relative;
-    left: 40px;;
+    left: 60px;;
 }
 hr{
     width: 200px;
