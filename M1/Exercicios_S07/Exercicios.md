@@ -59,3 +59,22 @@ Link de referencia: https://dribbble.com/shots/22389071-Sign-Up
 
 Em ‘Register here’ presente na tela de login, adicione uma ação de redirecionamento por meio da 'tag a' diretamente para a página de cadastro.
 
+------------------------------------------------------
+
+[M1S07] Ex 6 - Construa a seção do site presente na descrição
+
+Cores:
+
+#FFFFFF (texto principal)
+
+#FFBF00 (botão de ação)
+
+#332200 (cor do texto do botão de ação)
+
+#000 (background)
+
+#B2B2B2 (cor do subtitulo)
+
+Fonte:
+
+font-family: "Roboto", sans-serif;
