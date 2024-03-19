@@ -1,8 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
-    background: #a2e9c2;
+    background: #000000;
     height: 100px;
-   
+    width: 80%;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.logo{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    color:#ffffff;
+}
+
+nav{
+    color:#fff;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+section{
+    display: flex;
+    background-color: #35d1ec;
+    width: 80%;
+}
+
+
 
