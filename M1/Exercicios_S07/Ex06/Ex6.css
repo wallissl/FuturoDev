@@ -78,13 +78,14 @@ button{
     color:#332200;
     font-weight: bold;
     width: 140px;;
-    height: 200px;
+    height: 40px;
 }
 
 figure{
     width:50%;
     background-image: url(../img/bike.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 
