@@ -15,7 +15,7 @@ header{
 
 .logo{
     font-family: "Roboto", sans-serif;
-    font-size: 23px;
+    font-size: 25px;
     color:#ffffff;
 }
 
@@ -36,7 +36,42 @@ section{
     display: flex;
     background-color: #35d1ec;
     width: 80%;
+    height: 420px;
 }
+
+.titulo{
+    width:50%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    color:#B2B2B2;
+}
+
+button{
+    background-color: #FFBF00;
+    border:none;
+    padding: 7px;
+    color:#332200;
+}
+
+figure{
+    width:50%;
+    background-image: url(../img/bike.jpg);
+    background-size: cover;
+}
+
+
 
 
 
