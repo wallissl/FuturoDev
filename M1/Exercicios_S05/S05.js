@@ -6,17 +6,18 @@ let carrinho =[]
 let totalCarrino = Number();
 let valorCarinho = document.getElementById('valorCarrinho');
 let controle = 0
-let totalItens = 0
+let storage;
+let totalItens = 0 // Utilizado para realizar a contagem do número de itens comprados.
 
 function frutaEscolhida(codName){ // A função recebe o valor que o usuário digitar no input
 
    codName = codName.value.toLowerCase(); // Capturar o valor da variável e converter para minúsculo.
 
-    if(codName == 'banana'){
+    if(codName == 'banana' || codName == '201'){
         return `O valor do item "${codName}" é R$ 5,99 kg`
-    }else if(codName == 'maça'){
+    }else if(codName == 'maça' || codName == '202'){
         return `O valor do item "${codName}" é RS 6,99 kg`
-    }else if(codName == 'laranja'){
+    }else if(codName == 'laranja' || codName == '203'){
         return `O valor do item "${codName}" é RS 7,29 kg`
     }else{
         return `Digite o nome de um dos produtos disponíveis na loja`
@@ -36,19 +37,19 @@ function comprar(){
         preco: 5.99
     }; */
 
-    if(codName.value.toLowerCase() == 'banana'){
+    if(codName.value.toLowerCase() == 'banana' || '201'){
         produto = {
         nome:codName.value.toLowerCase(),
         preco:5.99
         }
         totalItens ++
-    }else if(codName.value.toLowerCase() == 'maça'){
+    }else if(codName.value.toLowerCase() == 'maça' || '202'){
         produto = {
             nome:codName.value.toLowerCase(),
             preco: 6.99
         }
         totalItens ++
-    }else if(codName.value.toLowerCase() == 'laranja'){
+    }else if(codName.value.toLowerCase() == 'laranja' || '203'){
         produto = {
             nome:codName.value.toLowerCase(),
             preco: 7.29
@@ -59,9 +60,21 @@ function comprar(){
         controle ++
     }
 
-    carrinho.push(produto)
-    console.log(carrinho)
+    carrinho.push(produto);
+
+    localStorage.setItem('Produtos', JSON.stringify(produto))
+
+    storage = localStorage.getItem('Produtos')
+
+    let storageConverter = JSON.parse(storage)
+
+    /* let produtosConsultados = (localStorage.getItem('Produtos'))
+    data = JSON.parse(produtosConsultados) */
+
+    console.log(storageConverter)
     
+    // console.log(carrinho)
+   
     if(carrinho != 0){
         for(i=controle; i<carrinho.length;i++){
         //  console.log(carrinho[i].preco)
