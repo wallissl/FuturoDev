@@ -2,8 +2,8 @@ export default function CardUsuario(props){
 
     return (
         <div>
-            <h2>{props.nome}</h2>
-            <span></span>
+            <h3>{props.nome}</h3>
+            <span>{props.email}</span>
         </div>
     )
 }

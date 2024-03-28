@@ -8,13 +8,18 @@ function App() {
 const nome = 'Wallis Silva'
 const email = 'email@emai.com'
 
-const listaUsuarios = [{
-  nome: 'Wallis',
-  idade: '32'
-}, {
-  nome: 'Ana',
-  idade: 25
-}]
+
+const listaUsuarios = [
+  {
+    nome: 'Wallis',
+    email: 'email@email.com',
+    senha: 1234
+  }, {
+    nome: 'Ana',
+    email: 'email@email.com',
+    senha: 1234
+  },
+]
 
 
   function mensagemBoasVindas(){
@@ -24,23 +29,29 @@ const listaUsuarios = [{
     // somente aqui aceita HTML
 
     <>
-    <div>
-      <h1>Nome do professor: {nome}</h1>
-      <h2>Email: {email}</h2>
-    </div>
+      <div>
+        <h1>Nome do professor: {nome}</h1>
+        <h2>Email: {email}</h2>
+      </div>
 
-    <Card titulo="Curso React" subtitulo="Aprendendo a usar props" />
-    <Card titulo="Curso DOM" subtitulo="Aprendendo a usar props" />
+      <Card titulo="Curso React" subtitulo="Aprendendo a usar props" />
+      <Card titulo="Curso DOM" subtitulo="Aprendendo a usar props" />
 
-    <button onClick={mensagemBoasVindas}>Exibir mensagem</button> {/* Exemplo de eventos para chamar uma função */}
+      <button onClick={mensagemBoasVindas}>Exibir mensagem</button> {/* Exemplo de eventos para chamar uma função */}
 
-    <button onClick={() => alert("Segundo Exemplo")}>Exibir mensagem2</button> {/* Exemplo de eventos para chamar uma arrowFunction */}
+      <button onClick={() => alert("Segundo Exemplo")}>Exibir mensagem2</button> {/* Exemplo de eventos para chamar uma arrowFunction */}
 
-    <div key={index}> {/* Key é utilizado para evitar o loop infinito*/}
+
+
       
-      {listaUsuarios.map((itemAtual) => (
-      <CardUsuario nome={itemAtual.nome} email={itemAtual.email} />))}
-    </div>
+        
+        {listaUsuarios.map((itemAtual) => (
+          <div key={index}>
+            <CardUsuario nome={itemAtual.nome} email={itemAtual.email} />
+        </div>
+
+        ))}
+      
     
 
     </>    
