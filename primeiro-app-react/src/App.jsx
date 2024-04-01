@@ -45,7 +45,7 @@ const listaUsuarios = [
 
       
         
-        {listaUsuarios.map((itemAtual) => (
+        {listaUsuarios.map((itemAtual,index) => (
           <div key={index}>
             <CardUsuario nome={itemAtual.nome} email={itemAtual.email} />
         </div>
