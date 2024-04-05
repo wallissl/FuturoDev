@@ -16,6 +16,7 @@ function CardTrilha({dadosTrilha}){
     )
 }
 
+// PropTypes são uma maneira de validar a tipagem dos dados em componentes React.
 CardTrilha.propTypes = {
     dadosTrilha: PropTypes.exact({
         nomeTrilha: PropTypes.string.isRequired,
