@@ -43,4 +43,47 @@ let numerosDobro = numeros.map((numero) => {
 
 console.log(numerosDobro);
 
-// Aula 01 - 01:27:50 - https://drive.google.com/drive/folders/19BMODJoiPqMFvl-ZC_TPSx81K5XNjQyN
+let numerosIndex = numeros.map((numero, index) => {
+    return `Teste: ${index}`
+})
+
+console.log(numerosIndex);
+
+let numerosPares = numeros.filter((numero) => {
+    return numero % 2 == 0
+});
+
+console.log(numerosPares);
+
+// Método reduce é utilizado para realizar o agrupamento de dados.
+let soma = numeros.reduce((total, numero) =>{
+    return total + numero
+},10); // 10 é o valor inicial nesse caso (total)
+
+console.log(soma);
+
+
+// Métodos de busca
+
+let numeroEncontrado = numeros.find((numero)=>{
+    return numero >3;
+})
+
+console.log(numeroEncontrado);
+
+let indiceEncontrado = numeros.findIndex((numero) => {
+    return numero > 0
+})
+
+console.log(indiceEncontrado);
+
+
+// Métodos de ordenação - sort (por padrão coloca os itens em ordem crescente)
+let filmesOrdenados = filmes.sort()
+
+console.log(filmesOrdenados);
+
+let numerosInvertidos = numeros.reverse();
+console.log(numerosInvertidos);
+
+// Instalação do postgresql - Aula 01 - 02:25:13 - https://drive.google.com/drive/folders/19BMODJoiPqMFvl-ZC_TPSx81K5XNjQyN
