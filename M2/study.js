@@ -85,5 +85,3 @@ console.log(filmesOrdenados);
 
 let numerosInvertidos = numeros.reverse();
 console.log(numerosInvertidos);
-
-// Instalação do postgresql - Aula 01 - 02:25:13 - https://drive.google.com/drive/folders/19BMODJoiPqMFvl-ZC_TPSx81K5XNjQyN
