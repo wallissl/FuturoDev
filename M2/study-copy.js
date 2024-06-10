@@ -50,4 +50,4 @@ const incrementar = contador()
 console.log(incrementar());
 console.log(incrementar());
 
-//01:30:00
+//01:30:00 -- 
