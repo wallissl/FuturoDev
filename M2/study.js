@@ -281,6 +281,3 @@ let medias = dados1.map(({nome, notas}) => {
 })
 
 console.log(medias)
-
-
-// Parei em 02:51:19
