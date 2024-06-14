@@ -1,4 +1,3 @@
-
 function transformarArray(array, transformacao){
     const novoArray = array.map((item) => {
         return transformacao(item) 
