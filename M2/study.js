@@ -323,7 +323,7 @@
     console.log(saudacaoBomDia('Maria'));
 
 
-    // Clousures - 01:09:35
+    // Closures - 01:09:35
 
     function contador() {
         let contagem = 0;

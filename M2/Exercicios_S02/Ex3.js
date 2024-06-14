@@ -1,4 +1,3 @@
-
 /* Dado um array de objetos representando produtos com propriedades categoria e preco, crie uma função que agrupe os produtos por categoria e calcule o preço total de cada categoria. */
 
 function agruparPorCategoria(produtos) {
