@@ -287,7 +287,7 @@
     console.log(medias)
 */
 
-// S2A03 - Funções de Alta Ordem | https://drive.google.com/file/d/1-MSSIEYbXKnvWET22EbQbO2qH5B-84fG/view
+/*// S2A03 - Funções de Alta Ordem | https://drive.google.com/file/d/1-MSSIEYbXKnvWET22EbQbO2qH5B-84fG/view
 
     // Funções de Alta Ordem - 00:33:43
     function executarOperacao(a,b, operacao){
@@ -392,4 +392,4 @@
     let funcaoComposta = compor(somar, multiplicar);
 
     console.log(funcaoComposta(5))
-    
+/*
