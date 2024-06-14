@@ -392,4 +392,4 @@
     let funcaoComposta = compor(somar, multiplicar);
 
     console.log(funcaoComposta(5))
-/*
+*/
