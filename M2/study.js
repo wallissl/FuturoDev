@@ -94,7 +94,6 @@
 
 */
 
-
 /* // S2A02 | Arrays de Objetos / 22/05/24 | https://drive.google.com/file/d/1U1VLtfcU-Pw7iIYc60RuxkRGucE7zfRW/view
 
     // Declaração de Objetos
@@ -287,7 +286,7 @@
     console.log(medias)
 */
 
-/*// S2A03 - Funções de Alta Ordem | https://drive.google.com/file/d/1-MSSIEYbXKnvWET22EbQbO2qH5B-84fG/view
+/* // S2A03 - Funções de Alta Ordem, Closures | https://drive.google.com/file/d/1-MSSIEYbXKnvWET22EbQbO2qH5B-84fG/view
 
     // Funções de Alta Ordem - 00:33:43
     function executarOperacao(a,b, operacao){
@@ -393,3 +392,23 @@
 
     console.log(funcaoComposta(5))
 */
+
+//
+
+    // S3A1 - Revisão sobre funções exportar e importar funções 27/09/24 | https://drive.google.com/file/d/1OtWCXZ8fLz1QIHfur0lSglBzsQ1ykR6D/view
+
+    // S3A2 - Classes | https://drive.google.com/file/d/1UFyyXufHWKN2_vIa5OOIOGScBtkGQ3jU/view
+
+    const Pessoa = require('./ClassPessoa.js');
+
+    const pessoa = new Pessoa('Wallis', 32) 
+    console.log(pessoa)
+
+    pessoa.cumprimentar();
+
+    console.log(pessoa.nome)
+
+    // Métodos get e set | 00:46:51
+
+    // 00:53:24
+
