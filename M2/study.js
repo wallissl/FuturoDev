@@ -401,14 +401,24 @@
 
     const Pessoa = require('./ClassPessoa.js');
 
-    const pessoa = new Pessoa('Wallis', 32) 
-    console.log(pessoa)
+    const pessoa = new Pessoa('Wallis', 32)
+    console.log(pessoa.getNome);
+    pessoa.cumprimentar();
+
+    pessoa.setIdade = 33;
 
     pessoa.cumprimentar();
 
-    console.log(pessoa.nome)
 
     // Métodos get e set | 00:46:51
 
-    // 01:05:27
+    // Classes - Herança | 01:47:47
+
+    // Exemplo com herança | 01:52:10
+
+    const Funcionario = require('./ClassFuncionario.js')
+    const funcionario = new Funcionario('Ana', 25, 'Pedagoga')
+
+    console.log(funcionario.getCargo)
+    funcionario.cumprimentar();
 

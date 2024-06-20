@@ -4,20 +4,28 @@
     // Atributos
     #nome;
     #idade;
+    
     constructor(nome,idade){
         /* this.nome = nome;
         this.idade = idade; Método público */
         this.#nome = nome;
         this.#idade = idade;
-        
     }
 
     get getNome(){
       return this.#nome
     }
 
+    get getIdade(){
+      return this.#idade
+    }
+
+    set setIdade(idade){
+      return this.#idade = idade
+    }
+
     cumprimentar(){
-        console.log(`Meu nome é ${nome} e tenho ${idade}`)
+        console.log(`Meu nome é ${this.#nome} e tenho ${this.#idade}`)
     }
 
   }
