@@ -9,8 +9,14 @@ Encontre a média de idade dos clientes em cada cidade. */
 SELECT * FROM clientes
 where nome like 'A%'
 
+
 select c.cliente_id, c.nome as nome_cliente, sum(p.valor) as total_pedidos
 from clientes c
 join pedidos p on c.cliente_id = p.cliente_id
 group by c.cliente_id, c.nome
 order by total_pedidos desc;
+
+
+select cidade, round(avg(idade),2) as media_idade
+from clientes
+group by cidade
