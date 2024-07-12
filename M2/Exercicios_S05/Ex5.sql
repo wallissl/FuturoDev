@@ -1,4 +1,4 @@
-/* Ex4 - Criar um arquivo SQL com os seguintes procedimentos:
+/* Ex5 - Criar um arquivo SQL com os seguintes procedimentos:
 
 Liste todos os pedidos junto com as informações dos clientes, usando um INNER JOIN.
 
