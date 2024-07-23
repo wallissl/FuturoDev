@@ -1,6 +1,4 @@
-/* Ex5 - Criar um arquivo SQL com os seguintes procedimentos:
-
-
+/* Ex6 - Criar um arquivo SQL com os seguintes procedimentos:
 
 Encontre o total de itens pedidos em cada mês.
 
